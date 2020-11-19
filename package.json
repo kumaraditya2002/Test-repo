@@ -1,0 +1,24 @@
+{
+  "name": "mama-ji",
+  "version": "1.0.0",
+  "description": "stock marketing webpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumaraditya2002/Test-repo.git"
+  },
+  "author": "ADITYA KUMAR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumaraditya2002/Test-repo/issues"
+  },
+  "homepage": "https://github.com/kumaraditya2002/Test-repo#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
+}
