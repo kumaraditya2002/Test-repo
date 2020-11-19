@@ -12,11 +12,23 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="mamaji.jpg">
-    <title id="tit">M Trader</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"
+      > -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <title id="tit">MTrader's Home</title>
+    <style>
+      *{
+         font-family: 'Roboto', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">M Trader</a>
+        <a href="index.html"><img src="logo.png" alt="logo" style="border-radius: 50%;"></a>
+        <a class="navbar-brand" href="index.html"><span class="ml-2">MTrader</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,11 +36,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#"></a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Bank Nifty
@@ -45,6 +57,22 @@
               </div>
             </li>
             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Performance Report
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item btnmy" href="#" id="btn-1">2015</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-2">2016</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-3">2017</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-4">2018</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-5">2019</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-6">2020</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+          </li>
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Account Opening(Refferal)
               </a>
@@ -55,6 +83,9 @@
                 <a class="dropdown-item" href="#">Aliceblue</a>
                 <a class="dropdown-item" href="#">Angelbroking</a>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="disclaimer.html">Disclaimer</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -67,6 +98,23 @@
           <marquee scrolldelay='15' scrollamount='5'  id="ribbon">
               
           </marquee>
+      </div>
+      <div class="container mt-3" id="main">
+        <!-- <h2 style="text-align: center; margin-top: 10px; margin-bottom: 10px;">About MTrader's</h2> -->
+        <div class="row jumbotron p-4">
+          <h1>
+            Welcome to MTrader's
+          </h1>
+        </div>
+        <br>
+        <p style="font-size: larger;">
+          M Trader's welcomes all the new members to our websites. M Trader's is created to educate Indian Stock Market Investors. All the views are for educational purpose and its our personal views. Consult your personal investment advisor before investing. Please read disclaimer in our website to know more about us.
+          <br>
+          <hr>
+        </p>
+        <p style="font-size: larger;">
+          M Trader's way of working: All the Analysis, Entry and Exit will be done on bank NIFTY weekly expiry option. You can track the past performance in our website. Profit and Loss will be calculated for ten lot of options. Stay away from advisories and Fake What's app & Telegram Channels. Our first target should be saving Capital. Always shift your stop loss to cost zone first in Intraday Trading. All views for educational purpose only. M Trader's is not into any kind of advisory services.
+        <p>
       </div>
       <table class="table table-bordered">
         <thead  id="theading">
@@ -82,21 +130,22 @@
                 <div class="col-4  col-sm-3">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
                 <div class="col-7   col-sm-3 address">
                     <h5>Our Address</h5>
-                    <address>
+                    <!-- <address>
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
 		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:munnasharma811@gmail.com">munnasharma811@gmail.com</a>
+		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br> -->
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:mkhome811@gmail.com">mkhome811@gmail.com</a>
 		           </address>
                 </div>
                 <div class="col-12  col-sm-6">
@@ -143,6 +192,8 @@
         Array.from(btns).forEach(item=>{
             item.addEventListener('click', e => {
             let headings = document.getElementById('theading');
+            let main = document.getElementById('main');
+            main.style.display = "none";
             document.getElementById('tit').innerText = item.innerText;
             fetch(url).then(res =>{
                 return res.json();
