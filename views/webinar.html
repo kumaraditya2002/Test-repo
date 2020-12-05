@@ -7,27 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="mamaji.jpg">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="icon" href="../public/img/mamaji.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet"
-      > -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <title id="tit">MTrader's Webinar</title>
-    <style>
-      *{
-         font-family: 'Roboto', sans-serif;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html"><img src="logo.png" alt="logo" style="border-radius: 50%;"></a>
+        <a href="index.html"><img src="../public/img/logo.png" alt="logo" style="border-radius: 50%;"></a>
         <a class="navbar-brand" href="index.html"><span class="ml-2">MTrader</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -101,7 +94,10 @@
         </div>
       </nav>
       <div class="container" id="main" style="text-align: center;">
-        <h1 class="m-5">Coming soon...</h1>
+        <div class="jumbotron p-5 mt-3">
+          <h1>Coming soon...</h1>
+
+        </div>
       </div>
       <table class="table table-bordered">
         <thead  id="theading">
@@ -156,57 +152,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    <script>
-        let rurl = `https://www1.nseindia.com/live_market/dynaContent/live_watch/stock_watch/liveIndexWatchData.json`;
-        let ribbon = document.getElementById('ribbon');
-        fetch(rurl).then(res=>{
-            return res.json();
-        }).then(data=>{
-            let values = data["data"];
-            let html = ``;
-            for(let i=0 ; i<5 ; i++)
-            {
-                for(let d in values[i])
-                {
-                  // if(d!=='timeVal')
-                    html += `<h4 style="display:inline-block; color:#fff; margin:0">${d}:${values[i][d]}&nbsp;&nbsp;&nbsp;&nbsp;</h4>`;
-                }
-            }
-            ribbon.innerHTML = html;
-        });
-        let url = 'db.json';
-        let btns = document.getElementsByClassName('btnmy');
-        Array.from(btns).forEach(item=>{
-            item.addEventListener('click', e => {
-            let headings = document.getElementById('theading');
-            let main = document.getElementById('main');
-            main.style.display = "none";
-            document.getElementById('tit').innerText = item.innerText;
-            fetch(url).then(res =>{
-                return res.json();
-            }).then(data => {
-                let arr = data[item.innerText];
-                let hstr=`<tr>`;
-                for(let titles in arr[0])
-                {
-                  hstr += `<th scope="col">${titles}</th>`
-                }
-                hstr +=`</tr>`
-                headings.innerHTML = hstr;
-                let body = document.getElementById('tbody');
-                let html=``;
-                arr.forEach(element => {
-                    html +=`<tr>`; 
-                    for(let title in element){
-                        console.log(element);
-                          html += `<td>${element[title]}</td>`;
-                    }
-                    html +=`</tr>`;
-                });
-                body.innerHTML = html;
-            }).catch(err => console.log(err));
-          });
-        });
-    </script>
+    <script src="../public/javascripts/index.js"></script>
   </body>
 </html>
