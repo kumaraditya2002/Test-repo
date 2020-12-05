@@ -18,7 +18,7 @@
       > -->
       <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <title id="tit">MTrader's Home</title>
+    <title id="tit">MTrader's Plans</title>
     <style>
       *{
          font-family: 'Roboto', sans-serif;
@@ -35,7 +35,7 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -62,12 +62,12 @@
                   Performance Report
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#" >2015</a>
-                  <a class="dropdown-item" href="#">2016</a>
-                  <a class="dropdown-item" href="#" >2017</a>
-                  <a class="dropdown-item" href="#">2018</a>
-                  <a class="dropdown-item" href="#" >2019</a>
-                  <a class="dropdown-item" href="#" >2020</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-1">2015</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-2">2016</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-3">2017</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-4">2018</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-5">2019</a>
+                  <a class="dropdown-item btnmy" href="#" id="btn-6">2020</a>
                   <!-- <div class="dropdown-divider"></div> -->
                   <!-- <a class="dropdown-item" href="#">Something else here</a> -->
               </div>
@@ -77,22 +77,22 @@
                 Account Opening(Refferal)
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://bv7np.app.goo.gl/B8hB" target="_blank">Upstox</a>
+                <a class="dropdown-item" href="#">Upstox</a>
                 <a class="dropdown-item" href="#">Zerodha</a>
                 <a class="dropdown-item" href="#">5Paisa</a>
                 <a class="dropdown-item" href="#">Aliceblue</a>
                 <a class="dropdown-item" href="#">Angelbroking</a>
               </div>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="plans.html">Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="webinar.html">Webinar</a>
+              </li>
             <li class="nav-item">
-              <a class="nav-link" href="plans.html">Plans</a>
+              <a class="nav-link" href="disclaimer.html">Disclaimer</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="webinar.html">Webinar</a>
-            </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="disclaimer.html">Disclaimer</a>
-                        </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -100,27 +100,50 @@
           </form>
         </div>
       </nav>
-      <div style="width: 100vw; background-color: black;">
-          <marquee scrolldelay='15' scrollamount='5'  id="ribbon">
-              
-          </marquee>
-      </div>
-      <div class="container mt-3" id="main">
-        <!-- <h2 style="text-align: center; margin-top: 10px; margin-bottom: 10px;">About MTrader's</h2> -->
-        <div class="row jumbotron p-4">
-          <h1>
-            Welcome to MTrader's
-          </h1>
-        </div>
-        <br>
-        <p style="font-size: larger;">
-          M Trader's welcomes all the new members to our websites. M Trader's is created to educate Indian Stock Market Investors. All the views are for educational purpose and its our personal views. Consult your personal investment advisor before investing. Please read disclaimer in our website to know more about us.
-          <br>
-          <hr>
-        </p>
-        <p style="font-size: larger;">
-          M Trader's way of working: All the Analysis, Entry and Exit will be done on bank NIFTY weekly expiry option. You can track the past performance in our website. Profit and Loss will be calculated for ten lot of options. Stay away from advisories and Fake What's app & Telegram Channels. Our first target should be saving Capital. Always shift your stop loss to cost zone first in Intraday Trading. All views for educational purpose only. M Trader's is not into any kind of advisory services.
-        <p>
+      <div class="container" id="main">
+          <div class="row">
+              <div class="card m-4" style="width: 18rem; box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);">
+                <img src="bronze.png" class="card-img-top" alt="bronze">
+                <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title" style=" display: inline; color: brown;">Bronze Plan <span class="badge bg-primary" style="color: white;">Rs499</span></h3>
+                    <p class="card-text mt-2" style="font-size: 1.5rem;">1 week subscription</p>
+                    <a href="#" class="btn btn-success">Subscribe</a> 
+                  </div>
+              </div>
+              <div class="card m-4" style="width: 18rem; box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);">
+                <img src="silver.png" class="card-img-top" alt="silver" height="277px">
+                <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title" style=" display: inline; color: rgb(180, 175, 175);">Silver Plan <span class="badge bg-primary" style="color: white;">Rs1499</span></h3>
+                    <p class="card-text mt-2" style="font-size: 1.5rem;">1 month subscription</p>
+                    <a href="#" class="btn btn-success">Subscribe</a> 
+                  </div>
+              </div>
+    
+                <div class="card m-4" style="width: 18rem; box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);">
+                  <img src="gold.png" class="card-img-top" alt="gold">
+                  <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title" style=" display: inline; color: gold;">Gold Plan <span class="badge bg-primary" style="color: white;">Rs2999</span></h3>
+                    <p class="card-text mt-2" style="font-size: 1.5rem;">3 months subscription</p>
+                    <a href="#" class="btn btn-success">Subscribe</a> 
+                  </div>
+                </div>
+                <div class="card m-4" style="width: 18rem; box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);">
+                  <img src="platinum.png" class="card-img-top" alt="platinum" height="267px">
+                  <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title" style=" display: inline; color: rgb(172, 164, 164);">Platinum Plan <span class="badge bg-primary" style="color: white;">Rs5999</span></h3>
+                    <p class="card-text mt-2" style="font-size: 1.5rem;">6 months subscription</p>
+                    <a href="#" class="btn btn-success">Subscribe</a> 
+                  </div>
+                </div>
+                <div class="card m-4" style="width: 18rem; box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);">
+                  <img src="platinum.png" class="card-img-top" alt="platinum" height="267px">
+                  <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title" style=" display: inline;">Diamond Plan <span class="badge bg-primary" style="color: white;">Rs9999</span></h3>
+                    <p class="card-text mt-2" style="font-size: 1.5rem;">1 year subscription</p>
+                    <a href="#" class="btn btn-success">Subscribe</a> 
+                  </div>
+                </div>
+            </div>
       </div>
       <table class="table table-bordered">
         <thead  id="theading">
@@ -167,7 +190,7 @@
            </div>
            <div class="row justify-content-center">             
                 <div class="col-auto" >
-                    <p>© Copyright 2020 M TRADER's</p>
+                    <p>© Copyright 2020 M TRADER's | All Rights Reserved</p>
                 </div>
            </div>
         </div>
