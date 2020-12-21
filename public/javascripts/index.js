@@ -1,4 +1,4 @@
-let url = 'http://localhost:5500/public/javascripts/db.json';
+let url = './db.json';
 let btns = document.getElementsByClassName('btnmy');
 Array.from(btns).forEach(item => {
     item.addEventListener('click', e => {
