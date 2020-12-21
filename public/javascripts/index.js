@@ -1,4 +1,4 @@
-let url = 'db.json';
+let url = 'Test-repo/public/db.json';
 let btns = document.getElementsByClassName('btnmy');
 Array.from(btns).forEach(item => {
     item.addEventListener('click', e => {
