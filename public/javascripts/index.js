@@ -1,4 +1,4 @@
-let url="https://kumaraditya2002.github.io/Test-repo/views/db.json";
+let url = 'https://kumaraditya2002.github.io/Test-repo/views/db.json';
 let btns = document.getElementsByClassName('btnmy');
 Array.from(btns).forEach(item => {
     item.addEventListener('click', e => {
