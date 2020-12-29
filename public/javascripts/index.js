@@ -1,9 +1,9 @@
-let url = 'http://localhost:5500/public/javascripts/db.json';
+let url="https://kumaraditya2002.github.io/Test-repo/views/db.json";
 let btns = document.getElementsByClassName('btnmy');
 Array.from(btns).forEach(item => {
     item.addEventListener('click', e => {
         let headings = document.getElementById('theading');
-        let main = document.getElementById('main');
+        let main = document.getElementsByClassName('main');
         main.style.display = "none";
         document.getElementById('tit').innerText = item.innerText;
         fetch(url).then(res => {
