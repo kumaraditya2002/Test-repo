@@ -100,12 +100,12 @@ function showData(){
     });
     if(s>0)
     {
-        tot.innerText=`Total P&L : ${s}`;
+        tot.innerText=`Total P&L = ${s} Rs.`;
         tot.style.backgroundColor = "green";
     }
     else if(s<=0)
     {
-        tot.innerText=`Total P&L : ${s}`;
+        tot.innerText=`Total P&L = ${s} Rs.`;
         tot.style.backgroundColor = "red";
     }
     tbody.innerHTML = html;
@@ -149,12 +149,12 @@ s3.addEventListener('input',(e)=>{
     }
     if(sum>0)
     {
-        tot.innerText=`Total P&L : ${sum}`;
+        tot.innerText=`Total P&L = ${sum} Rs.`;
         tot.style.backgroundColor = "green";
     }
     else if(sum<=0)
     {
-        tot.innerText=`Total P&L : ${sum}`;
+        tot.innerText=`Total P&L = ${sum} Rs.`;
         tot.style.backgroundColor = "red";
     }
 });

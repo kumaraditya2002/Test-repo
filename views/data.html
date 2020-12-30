@@ -19,6 +19,18 @@
     <link rel="stylesheet" href="../public/stylesheets/style.css">
     <link rel="icon" href="../public/img/mamaji.jpg">
     <title id="tit">MTrader's Home</title>
+    <style>
+      .tablefixed{
+        overflow-y: auto;
+        height: 400px;
+      }
+      .tablefixed thead th{
+        background-color: grey;
+        color: white;
+        position: sticky;
+        top: 0;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -150,27 +162,28 @@
                   </div>
               </div>
           </form>
-      
-          <table class="table table-striped" >
-            <thead  id="theading"  id="heading" >
-                <tr class="bg-primary text-white">
-                    <td>S.No</td>
-                    <td>Date</td>
-                    <td>Index</td>
-                    <td>LOT</td>
-                    <td>PE/CE</td>
-                    <td>Strike Price</td>
-                    <td>Buy</td>
-                    <td>Sell</td>
-                    <td>P&L</td>
-                    <td>Delete</td>
-                </tr>
-            </thead>
-            <tbody id="tbody">
-                
-            </tbody>
-            <caption style="text-align: center; font-size: 1.3rem;" id="total" class=" text-white" style="background-color: green;"></caption>
-          </table>
+          <h3 style="text-align: center; padding:1.1rem; font-size: 1.3rem;" id="total" class=" text-white" style="background-color: green;"></h3>
+          <div class="tablefixed">
+            <table class="table" >
+              <thead  id="theading">
+                  <tr>
+                      <th>S.No</th>
+                      <th>Date</th>
+                      <th>Index</th>
+                      <th>LOT</th>
+                      <th>PE/CE</th>
+                      <th>Strike Price</th>
+                      <th>Buy</th>
+                      <th>Sell</th>
+                      <th>P&L</th>
+                      <th>Delete</th>
+                  </tr>
+              </thead>
+              <tbody id="tbody">
+                  
+              </tbody>
+            </table>
+          </div>
       </div>
       <table class="table table-bordered">
         <thead  id="theading">
