@@ -79,7 +79,7 @@ function showData(){
                     <td>${element.buy}</td>
                     <td>${element.sell}</td>
                     <td>${element.price}</td>
-                    <td><button class="btn btn-outline-success" id="${index}" onclick="deleteEntry(this.id)"><i class="fa fa-trash"></i></button></td>
+                    <td><button class="btn btn-outline-danger" id="${index}" onclick="deleteEntry(this.id)"><i class="fa fa-trash"></i></button></td>
                 </tr>`
         }
         else if(+element.price>=0)
@@ -94,11 +94,20 @@ function showData(){
                         <td>${element.buy}</td>
                         <td>${element.sell}</td>
                         <td>${element.price}</td>
-                        <td><button class="btn btn-outline-success" id="${index}" onclick="deleteEntry(this.id)"><i class="fa fa-trash"></i></button></td>
+                        <td><button class="btn btn-outline-danger" id="${index}" onclick="deleteEntry(this.id)"><i class="fa fa-trash"></i></button></td>
                     </tr>`
         }
     });
-    tot.innerText=`TOTAL P&L: ${s}`;
+    if(s>0)
+    {
+        tot.innerText=`Total P&L : ${s}`;
+        tot.style.backgroundColor = "green";
+    }
+    else if(s<=0)
+    {
+        tot.innerText=`Total P&L : ${s}`;
+        tot.style.backgroundColor = "red";
+    }
     tbody.innerHTML = html;
 }
 
@@ -138,7 +147,16 @@ s3.addEventListener('input',(e)=>{
             sum += +dataObj[i]["price"];
         }
     }
-    tot.innerText = `TOTAL P&L: ${sum}`;
+    if(sum>0)
+    {
+        tot.innerText=`Total P&L : ${sum}`;
+        tot.style.backgroundColor = "green";
+    }
+    else if(sum<=0)
+    {
+        tot.innerText=`Total P&L : ${sum}`;
+        tot.style.backgroundColor = "red";
+    }
 });
 
 
